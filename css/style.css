@@ -1,0 +1,212 @@
+*{
+    margin: 1px;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Poppins','Belanosima', sans-serif;
+}
+
+
+#titulo{
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: rgba(30, 30, 30, 0.3);
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#encabezado{
+    background-color: rgb(216, 120, 30);
+    position: sticky;
+    margin-top: 5px;
+    top: 0;
+    height: 10px;
+    z-index: 1000;
+}
+
+
+
+figcaption{
+    text-align: center;
+}
+
+#galeria {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+h2{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.601);
+    height: 30px;
+    font-size: 16px;
+}
+article{
+    border: solid 1px gray;
+   height: 200px; 
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#imglogo{
+    height: 50px;
+    width: 50px;
+}
+
+
+#prueba_centro{
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    
+    text-decoration: none;
+}
+
+.container{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    position: relative;
+}
+
+div div{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+}
+
+
+footer{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #06D4A0;
+    align-items: center;
+    align-content: center;
+}
+
+#redesul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*=== Aplicando comportamiento resposive o adaptativo===*/
+/* Medium devices (tablets, 768px and up)*/
+/*=== Trabajando con CSS-GRID===*/
+@media (min-width: 768px) { 
+
+    .portada
+    { 
+        position: relative;
+        height: 60vh;
+        width: 95%;
+        background-image: url(../img/portada.jpeg);
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: bottom;
+    }   
+
+    #encabezado{
+        padding: 0 5px;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        height: 10%;
+        
+    }
+    
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1 fr 1fr;
+        gap: 15px;
+    }
+
+    #opciones{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        text-align: center;
+        align-items: center;
+    }
+
+    #opciones>li>a{
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .container__lugares{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr .1fr;
+        gap: 10px;
+        grid-template-rows: 300px;
+    }
+
+    .lugares{
+        height: 100%;
+        margin-top: 30px;
+        display: grid;
+        grid-template-rows: 75% 25%;
+        gap: 5px;
+    }
+
+    .lugares > p{
+        height: 90;   
+     }
+
+    #nosotros{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    #nosotros > p {
+        text-align: justify;
+        font-size: 12px;
+        padding: 0.5em;
+    }
+
+    #nosotros>img{
+        margin: auto;
+        width: 85%;
+        height: 85%;
+        box-shadow: 0 0 10px 5px gray;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .portada
+    { 
+        position: relative;
+        height: 80vh;
+        width: 100%;
+        background-image: url(../img/portada.jpeg);
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: bottom;
+    }   
+
+}

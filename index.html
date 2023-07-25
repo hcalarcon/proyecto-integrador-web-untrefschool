@@ -3,140 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <meta name="author" content="Hernaldo Cristian Alarcón">
     <meta name="description" content="Sumérgete en la belleza indomable de la Patagonia a través de nuestra colección de imágenes y vídeos cautivadores. Nos enorgullece presentar la riqueza natural y la majestuosidad de esta región única en el mundo. Desde vastas llanuras hasta imponentes montañas, desde glaciares impresionantes hasta lagos cristalinos, capturamos la esencia y la diversidad de la Patagonia en cada imagen.">
     <link rel="icon" type="image/x-icon" href="img/mountain.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style2.css">
     <title>Postal Patagonia</title>
 </head>
 <body>
-    <div class="portada">
-            <div id="prueba_centro">
-                <p id="titulo">POSTAL PATAGONIA <br> Nuestro Lugar en el Mundo</p>
+    <header>
+      <div class="class__portada" id="portada">
+            <div class="class_portada" id="prueba_centro">
+                <p class="class__portada" id="titulo">
+                    POSTAL PATAGONIA <br> Nuestro Lugar en el Mundo
+                </p>
             </div>
         </div>
-    <header id="encabezado">
-        <a id="logo" href="#"><img src="img/mountain.png" id="imglogo" alt="montaña con nube y nieve en la cima" width="30px">
-        </a>
-        <nav class="menu">
-            <ul id="opciones">
-                <li><a href="#portada">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#lugares">Lugares</a></li>
-                <li><a href="#actividades">Actividades</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="contacto.html" target="_blank">Contacto</a></li>
-            </ul>
-        </nav>
+        
     </header>
+    <nav class="navbar sticky-top navbar-expand-md" id="barranav">
+        <a class="navbar-brand" href="#"><img src="img/mountain.png" id="imglogo" alt="montaña con nube y nieve en la cima" width="40px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#" class="nav-link active">Inicio</a></li>
+            <li class="nav-item"><a href="#nosotros" class="nav-link" >Nosotros</a></li>
+            <li class="nav-item"><a href="#lugares" class="nav-link">Lugares</a></li>
+            <li class="nav-item"><a href="#actividades" class="nav-link">Actividades</a></li>
+            <li class="nav-item"><a href="#galeria" class="nav-link">Galeria</a></li>
+            <li class="nav-item"><a href="contacto.html" target="_blank" class="nav-link">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
     <main>
-        <h2>Sobre nosotros</h2>
-        <section id="nosotros">
-        
-            <img src="img/nosotros.jpg" alt="">
-            <p class="sobrenosotros">¡Hola! Somos la familia García, y queremos compartir nuestra emocionante historia de amor y exploración en la Patagonia argentina.
-                <br>
-                Desde que nos mudamos a esta maravillosa región, nos enamoramos de sus paisajes espectaculares y su rica biodiversidad. Mi nombre es Juan, y como biólogo, siempre soñé con vivir aquí para estudiar la flora y fauna únicas de la Patagonia.
-                <br>
-                Mi esposa, Laura, es una montañista intrépida que adora la adrenalina que ofrecen los picos nevados y las cumbres desafiantes. Juntos, hemos escalado algunas de las montañas más impresionantes de la región, disfrutando de las vistas panorámicas que solo la Patagonia puede ofrecer.
-                <br>
-                Nuestra hija, Martina crecido rodeados de naturaleza. Los largos paseos por los bosques y las orillas de los ríos han avivado su curiosidad y amor por el mundo natural. Cada día es una nueva aventura para ella, explorando y aprendiendo sobre las especies que habitan en esta vasta tierra.
-                <br>
-                En nuestra página web, queremos compartir nuestras experiencias, fotografías y consejos para aquellos que deseen conocer y apreciar la belleza de la Patagonia. ¡Esperamos que nuestras historias los inspiren a sumergirse en este paraíso natural y a descubrir los tesoros que la Patagonia tiene para ofrecer!
-                <br>
-                ¡Bienvenidos a nuestra emocionante travesía en la Patagonia argentina!
+      <h2>Sobre nosotros</h2>
+      <section id="nosotros">
+      
+          <img src="img/nosotros.jpg" alt="">
+          <p class="sobrenosotros">¡Hola! Somos la familia García, y queremos compartir nuestra emocionante historia de amor y exploración en la Patagonia argentina.
+              <br>
+              Desde que nos mudamos a esta maravillosa región, nos enamoramos de sus paisajes espectaculares y su rica biodiversidad. Mi nombre es Juan, y como biólogo, siempre soñé con vivir aquí para estudiar la flora y fauna únicas de la Patagonia.
+              <br>
+              Mi esposa, Laura, es una montañista intrépida que adora la adrenalina que ofrecen los picos nevados y las cumbres desafiantes. Juntos, hemos escalado algunas de las montañas más impresionantes de la región, disfrutando de las vistas panorámicas que solo la Patagonia puede ofrecer.
+              <br>
+              Nuestra hija, Martina crecido rodeados de naturaleza. Los largos paseos por los bosques y las orillas de los ríos han avivado su curiosidad y amor por el mundo natural. Cada día es una nueva aventura para ella, explorando y aprendiendo sobre las especies que habitan en esta vasta tierra.
+              <br>
+              En nuestra página web, queremos compartir nuestras experiencias, fotografías y consejos para aquellos que deseen conocer y apreciar la belleza de la Patagonia. ¡Esperamos que nuestras historias los inspiren a sumergirse en este paraíso natural y a descubrir los tesoros que la Patagonia tiene para ofrecer!
+              <br>
+              ¡Bienvenidos a nuestra emocionante travesía en la Patagonia argentina!
+              
+              Familia García</p>
+      </section>
+      <hr>
+      <a id="lugares"></a>
+      <h2>Lugares para conocer</h2>
+      <section class="container__lugares">
+          <article class="lugares">
+              <div class="lugar">
+                  <img src="img/san_martin.jpg" alt="centro de san martin de los andes, de fondo el lago lacar y los cerros">
+                  <h3>San Martín de los Andes</h3>
+                  <p>
+                      Es una ciudad en el noroeste de la Patagonia, Argentina... <a href="#">ver mas>>></a>
+                  </p>
+              </div>
+          </article>
+          <article class="lugares">
+              <div class="lugar">
+                  <img src="img/bariloche.jpg" alt="catedral de bariloche, de fondo cerros y el lago nahuel huapi">
+                  <h3>Bariloche</h3>
+                  <p>Es una ciudad emplazada sobre el lago Nahuek Huapi ...<a href="#">ver mas>>></a></p>
+              </div>
+          </article>
+          <article class="lugares">
+              <div class="lugar">
+                  <img src="img/villa_la_angostura.webp" alt="lago nahuel huapi, montañas y un muelle">
+                  <h3>Villa la Angostura</h3>
+                  <p>Es una ciudad ...<a href="#">ver mas>>></a></p>
+              </div>
+          </article>
+          </article>
+          <article class="lugares">
+              <div class="lugar">
+                  <img src="" alt="">
+              </div>
+          </article>
+          
+      </section>
+      
+      <br>
+      <h2>Galeria de imagenes</h2>
+      <br>
+      <section id="galeria">
+          <article><img src="img/lolog.jpg" alt="" class="imaggaleria"></article>
+          <article><img src="img/villarino.jpg" alt="" class="imaggaleria"></article>
+          <article><img src="img/machonico.jpg" alt="" class="imaggaleria"></article>
+          <article><img src="img/galeria3.jpeg" alt="" class="imaggaleria"></article> 
+          <article><img src="img/galeria4.jpeg" alt="" class="imggaleria"></article>
+          <article><img src="img/galeria5.jpeg" alt="" class="imggaleria"></article>
+          <article><img src="img/galeria6.jpeg" alt="" class="imggaleria"></article>
+          <article><img src="img/galeria7.jpeg" alt="" class="imggaleria"></article>
+          <article><img src="img/galeria8.jpeg" alt="" class="imggaleria"></article>
+          <article><img src="img/galeria9.jpeg" alt="" class="imggaleria"></article>
+          <article><img src="img/galeria11.jpeg" alt="" class="imggaleria"></article>
+          <article><img src="img/fondoformulario.jpg" alt="" class="imggaleria"></article>    
+      </section>
+
+      <section class="carrusel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/galeria3.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/galeria4.jpeg" class="d-block w-100" alt="...">
                 
-                Familia García</p>
-            
-        </section>
-        <hr>
-        
-        <a id="lugares"></a>
-        <h2>Lugares para conocer</h2>
-        <section class="container__lugares">
-            <article class="lugares">
-                <div class="lugar">
-                    <img src="img/san_martin.jpg" alt="centro de san martin de los andes, de fondo el lago lacar y los cerros">
-                    <h3>San Martín de los Andes</h3>
-                    <p>
-                        San Martín de los Andes es una ciudad en el noroeste de la Patagonia, Argentina... <a href="#">ver mas>>></a>
-                    </p>
-                </div>
-            </article>
-            <article class="lugares">
-                <div class="lugar">
-                    <img src="img/bariloche.jpg" alt="catedral de bariloche, de fondo cerros y el lago nahuel huapi">
-                    <p></p>
-                </div>
-            </article>
-            <article class="lugares">
-                <div class="lugar">
-                    <img src="img/villa_la_angostura.webp" alt="lago nahuel huapi, montañas y un muelle">
-                    <p></p>
-                </div>
-            </article>
-            </article>
-            <article class="lugares">
-                <div class="lugar">
-                    <img src="" alt="">
-                </div>
-            </article>
-            
-        </section>
-        
-        <br>
-        <h2>Galeria de imagenes</h2>
-        <br>
-        <section id="galeria">
-            
-            <article><img src="img/lolog.jpg" alt="" class="imaggaleria"></article>
-            <article><img src="img/villarino.jpg" alt="" class="imaggaleria"></article>
-            <article><img src="img/machonico.jpg" alt="" class="imaggaleria"></article>
-            <article><img src="img/galeria11.jpeg" alt="" class="imaggaleria"></article> 
-            <article><img src="img/galeria4.jpeg" alt="" class="imggaleria"></article>
-            <article><img src="img/galeria5.jpeg" alt="" class="imggaleria"></article>
-            <article><img src="img/galeria6.jpeg" alt="" class="imggaleria"></article>
-            <article><img src="img/galeria7.jpeg" alt="" class="imggaleria"></article>
-            <article><img src="img/galeria8.jpeg" alt="" class="imggaleria"></article>
-            <article><img src="img/galeria9.jpeg" alt="" class="imggaleria"></article>
-            <article><img src="img/galeria10.jpeg" alt="" class="imggaleria"></article>
-            <article><img src="img/portada-sanmartin.jpg" alt="" class="imggaleria"></article>    
-        </section>
-       <br>
+              </div>
+              <div class="carousel-item">
+                <img src="img/galeria5.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/lolog.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/galeria7.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/galeria8.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/galeria9.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/galeria11.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+      </section>
+  </main>
 
-       <hr>
-       <h2>Contacta con nosotros</h2>
-       <br>
-       <section id="contacto">
-        <form action="" method="post"></form>
-       </section>
-    </main>
-
-   
-    <footer>
-        <div id="redes">
-            <ul id="redesul">
-                <li><a href="htpps://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram fa-lg"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
-            </ul>
-        </div>
-        <div id="direccion">
-            <h3>Estamos</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97604.52778000379!2d-71.36966069345762!3d-40.13913185268557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110e743605d0c7%3A0x71c43ffb1c66bc3a!2sSan%20Martin%20de%20los%20Andes%2C%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1689702581519!5m2!1ses!2sar" width="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div id="contacto">
-            <h3>Contacto</h3>
-            <a href="tel:3644277105"></a>
-            <a href="mailto:hernaldo.alar@gmail.com">contacto@ppatagonia.com</a>
-        </div>
-        
-        
-    </footer>
-    <script src="https://kit.fontawesome.com/5813b3f1c4.js" crossorigin="anonymous"></script>
+ 
+  <footer>
+      <div id="redes">
+          <ul id="redesul">
+              <li><a href="htpps://facebook.com"><i class="fa-brands fa-facebook xg"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+          </ul>
+      </div>
+      <div id="direccion">
+          <h3>Encontranos en: </h3>
+          <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97604.52778000379!2d-71.36966069345762!3d-40.13913185268557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110e743605d0c7%3A0x71c43ffb1c66bc3a!2sSan%20Martin%20de%20los%20Andes%2C%20Neuqu%C3%A9n!5e0!3m2!1ses!2sar!4v1689702581519!5m2!1ses!2sar" min-width="100" max-width="300" style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div id="contacto">
+          <h3>Contacto</h3>
+          <a href="tel:3644277105"></a>
+          <a href="mailto:hernaldo.alar@gmail.com">contacto@ppatagonia.com</a>
+      </div>
+      
+      
+  </footer>
+  <script src="https://kit.fontawesome.com/5813b3f1c4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Poppins','Belanosima', sans-serif;
+    box-sizing: content-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#imglogo {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+
+nav{
+    background: #8CE1F5;
+    box-shadow: 1px 1px 1px 1px  rgba(66, 63, 63, 0.788);
+}
+
+.nav-link{
+    font-size: 16px;
+}
+
+h2{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.601);
+    height: 30px;
+    font-size: 16px;
+}
+
+footer h3 {
+    text-align: center;
+    padding: 5px 0;
+}
+
+#redesul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+
+
+i{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+@media (max-width:500px)
+{
+    #nosotros{
+        margin-top: 25px;
+    }
+
+    #nosotros > p {
+        text-align: justify;
+        font-size: 10px;
+        padding: 1em;
+    }
+
+    #nosotros>img{
+        margin: auto;
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+    }
+
+    .container__lugares{
+        margin-top: 25px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 0.2fr;
+    }
+
+    .carrusel{
+        margin-top: 10px;
+        padding: 0 1px;
+    }
+
+    .class__portada{
+        display: none;
+    }
+
+    #galeria {
+        
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        object-fit: cover;
+        display: none;
+    }
+
+    footer{
+        margin-top: 10px;
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: .5fr 1fr .5fr;
+        background-color:#8CE1F5;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #mapa{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+        
+    }
+
+
+}
+
+
+
+@media (min-width: 501px) { 
+
+    #portada
+    { 
+        position: relative;
+        height: 20vh;
+        width: 100%;
+        background-image: url(../img/portada.jpeg);
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position-y: -400px;
+    }   
+
+    #titulo{
+        font-size: 2rem;
+        font-weight: 400;
+        background-color: rgba(30, 30, 30, 0.3);
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    
+    #prueba_centro{
+        position: absolute;
+        margin: auto;
+        width: 100%;
+        height: 60px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        
+    }
+
+    #nosotros{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    #nosotros > p {
+        text-align: justify;
+        font-size: 12px;
+        padding: 1em;
+    }
+
+    #nosotros>img{
+        margin: auto;
+        width: 85%;
+        height: 85%;
+        box-shadow: 0 0 10px 5px gray;
+        border-radius: 10px;
+    }
+
+    .container__lugares{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr .1fr;
+        gap: 10px;
+        grid-template-rows: 300px;
+    }
+
+    .lugares{
+        height: 100%;
+        margin-top: 30px;
+        display: grid;
+        grid-template-rows: 75% 25%;
+        gap: 5px;
+    }
+
+    .lugares > p{
+        height: 90;   
+     }
+
+     #galeria {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .carrusel{
+        display: none;
+    }
+
+    footer{
+        margin-top: 10px;
+        overflow: hidden;
+        display: flex;
+        background-color:#8CE1F5;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #mapa{
+        width: 200px;
+        
+    }
+
+}
+
+
+@media (min-width: 1200px) { 
+    #portada{
+        height: 60vh;
+        width: 100%;
+        background-position-y : -300px;
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position-y: -400px;
+
+    }
+
+    #galeria {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        object-fit: cover;
+    }
+
+    .imggaleria{
+        height: 250px;
+    }
+
+
+
+    
+
+}

@@ -31,12 +31,7 @@ figcaption{
     text-align: center;
 }
 
-#galeria {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
+
 
 h2{
     position: relative;
@@ -112,6 +107,31 @@ footer{
     grid-template-columns: repeat(3, 1fr);
 }
 
+/*Pantalla pequeñas*/
+@media (max-width:480px)
+{
+    .portada{
+        position: relative;
+        height: 30vh;
+        width: 100%;
+        background-image: url(../img/portada.jpeg);
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    #galeria {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    
+}
+
+
 /*=== Aplicando comportamiento resposive o adaptativo===*/
 /* Medium devices (tablets, 768px and up)*/
 /*=== Trabajando con CSS-GRID===*/
@@ -121,7 +141,7 @@ footer{
     { 
         position: relative;
         height: 60vh;
-        width: 95%;
+        width: 100%;
         background-image: url(../img/portada.jpeg);
         background-attachment: fixed;
         background-repeat: repeat;
@@ -130,11 +150,10 @@ footer{
     }   
 
     #encabezado{
-        padding: 0 5px;
+        padding: 5px;
         display: grid;
         grid-template-columns: 1fr 4fr;
         height: 10%;
-        
     }
     
     .menu{
@@ -194,6 +213,13 @@ footer{
         box-shadow: 0 0 10px 5px gray;
         border-radius: 10px;
     }
+
+    #galeria {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -208,5 +234,12 @@ footer{
         background-size: cover;
         background-position: bottom;
     }   
+
+    #galeria {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
 
 }

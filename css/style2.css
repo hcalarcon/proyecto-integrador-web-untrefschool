@@ -1,9 +1,10 @@
 *{
-    margin: 0px;
+    margin: 0;
     padding: 0;
     font-size: 10px;
     font-family: 'Poppins','Belanosima', sans-serif;
     box-sizing: content-box;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -12,14 +13,19 @@ img {
 }
 
 #imglogo {
+    margin: auto;
     width: 30px;
     height: 30px;
-    padding: 3px;
+    padding: 0 10px;
 }
 
+body{
+    background-image: radial-gradient(circle at 20.18% 7.41%, #ebefd0 0, #e7f0d1 6.25%, #e3f1d3 12.5%, #def2d6 18.75%, #daf3d9 25%, #d6f4dc 31.25%, #d2f4e0 37.5%, #cff5e3 43.75%, #ccf5e7 50%, #c9f5eb 56.25%, #c7f5ef 62.5%, #c6f5f3 68.75%, #c5f5f6 75%, #c5f5fa 81.25%, #c5f4fd 87.5%, #c6f4ff 93.75%, #c8f3ff 100%);
+    
+}
 
 nav{
-    background: #8CE1F5;
+    background: #5cd4ef;
     box-shadow: 1px 1px 1px 1px  rgba(66, 63, 63, 0.788);
 }
 
@@ -29,33 +35,111 @@ nav{
 
 h2{
     position: relative;
-    top: 20px;
+    top: 10px;
     text-align: center;
     align-items: center;
     background: rgba(128, 128, 128, 0.601);
-    height: 30px;
     font-size: 16px;
+    padding: 5px 0;
 }
 
 footer h3 {
     text-align: center;
-    padding: 5px 0;
+    font-size: 2rem;
+}
+
+footer div a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+footer div#direccion, #contacto{
+    gap: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-rows: 1fr .30fr;
+    align-items: center;
+    
 }
 
 #redesul{
+    margin: 10px 0;
     width: 100%;
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     justify-items: center;
+    padding: 0;
+}
+
+.navbar-toggler , #navbarSupportedContent{
+    margin-right: 5px;
+}
+
+i{
+    
+    color: black;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.lugar{
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.des{
+    padding: 2px 5px;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 10px;
+    background: rgba(128 128 128 / 0.601);
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 1px rgb(53, 52, 52);
+}
+
+.lugar img{
+    position: relative;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 5px black;
+}
+
+.lugares a{
+    text-decoration: none;
+    color: black;
 }
 
 
+footer{
+    margin-top: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color:#91d9ea;
+    justify-content: center;
+    align-items: center;
+}
 
-i{
-    width: 40px;
-    height: 40px;
-    color: black;
+.derechos{
+    border-top: solid 1px black;
+}
+
+.derechos h4{
+    padding-top: 2px;
+    text-align: center;
+    font-size: 15px;
 }
 
 @media (max-width:500px)
@@ -78,22 +162,71 @@ i{
     }
 
     .container__lugares{
-        margin-top: 25px;
+        margin-top: 20px;
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 0.2fr;
+        grid-template-rows: 1fr 1fr 1fr 0.1fr;
+        gap: 15px;
+    }
+
+    #maslugares{
+        background: gray;
+        text-align: center;
+        font-size: 2rem;
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+   
+
+    #img4 {
+        object-position: 0 80%;
+    }
+
+    .actividades{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .actividad {
+       
+        position: relative;
+    }
+    .actividad img{
+        width: 100%;
+        height: 70px;
+        object-fit: cover;
+        object-position: 0 50%;
+    }
+
+    .actividad .desc {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 20px;
+        margin: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .actividad .desc h2 {
+        padding: 0;
+        margin: 0;
+        position: static;
     }
 
     .carrusel{
         margin-top: 10px;
         padding: 0 1px;
+        object-fit: cover;
     }
 
     .class__portada{
         display: none;
     }
 
-    #galeria {
-        
+    #galeria {        
         margin-top: 30px;
         display: grid;
         grid-template-columns: 1fr;
@@ -102,24 +235,18 @@ i{
         display: none;
     }
 
-    footer{
-        margin-top: 10px;
-        overflow: hidden;
-        display: grid;
-        grid-template-rows: .5fr 1fr .5fr;
-        background-color:#8CE1F5;
+    .footer{
+        display: flex;
+        flex-direction: column;
         justify-content: space-around;
-        align-items: center;
     }
 
     #mapa{
-        width: 100px;
-        height: 100px;
-        margin-bottom: 10px;
+        width: 100%;
+        height: 150px;
+        padding: 10px 0;
         
     }
-
-
 }
 
 
@@ -159,15 +286,20 @@ i{
         
     }
 
+    #menu {
+        gap: 10px;
+        margin: auto;
+    }
+
     #nosotros{
-        margin-top: 40px;
+        margin-top: 20px;
         display: grid;
         grid-template-columns: 40% 60%;
     }
 
     #nosotros > p {
         text-align: justify;
-        font-size: 12px;
+        font-size: 10px;
         padding: 1em;
     }
 
@@ -180,7 +312,59 @@ i{
     }
 
     .container__lugares{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 0.1fr;
+        gap: 10px;
+        margin-top: 20px;
+        padding: 0 5px;
+    }
+
+    .des p, .lugar a {
+        display: none;
+    }
+
+     #galeria {
         margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .carrusel{
+        display: none;
+    }
+
+    .footer{
+        margin-top: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #mapa{
+        width: 250px;
+        height: 150px;
+    }
+
+}
+
+
+@media (min-width: 1200px) { 
+    #portada{
+        height: 60vh;
+        width: 100%;
+        background-position-y : -300px;
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position-y: -400px;
+
+    }
+
+    .container__lugares{
+        padding: 0 5px;
+        margin-top: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr .1fr;
         gap: 10px;
@@ -199,46 +383,6 @@ i{
         height: 90;   
      }
 
-     #galeria {
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
-
-    .carrusel{
-        display: none;
-    }
-
-    footer{
-        margin-top: 10px;
-        overflow: hidden;
-        display: flex;
-        background-color:#8CE1F5;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    #mapa{
-        width: 200px;
-        
-    }
-
-}
-
-
-@media (min-width: 1200px) { 
-    #portada{
-        height: 60vh;
-        width: 100%;
-        background-position-y : -300px;
-        background-attachment: fixed;
-        background-repeat: repeat;
-        background-size: cover;
-        background-position-y: -400px;
-
-    }
-
     #galeria {
         margin-top: 30px;
         display: grid;
@@ -251,8 +395,9 @@ i{
         height: 250px;
     }
 
-
-
-    
-
+    #mapa{
+        width:400px;
+        height: 200px;
+        
+    }
 }

@@ -70,9 +70,9 @@ footer div#direccion, #contacto{
     width: 100%;
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-items: center;
-    padding: 0;
+    padding: 0 15px;
 }
 
 .navbar-toggler , #navbarSupportedContent{
@@ -121,6 +121,24 @@ i{
     color: black;
 }
 
+article{
+    overflow: hidden;
+}
+
+#div__lugar{
+    position: relative;
+}
+
+#chevron{
+    height: 10px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 
 footer{
     margin-top: 10px;
@@ -128,18 +146,20 @@ footer{
     display: flex;
     flex-direction: column;
     background-color:#91d9ea;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .derechos{
     border-top: solid 1px black;
+    width: 100%;
 }
 
 .derechos h4{
     padding-top: 2px;
     text-align: center;
     font-size: 15px;
+    width: 100%;
 }
 
 @media (max-width:500px)
@@ -176,10 +196,16 @@ footer{
         padding: 0 10px;
     }
 
-   
+    #chevron{
+        display: none;
+    }
 
     #img4 {
-        object-position: 0 80%;
+        object-position: 0 35%;
+    }
+
+    #img2{
+        object-position: 0 20%;
     }
 
     .actividades{
@@ -299,8 +325,9 @@ footer{
 
     #nosotros > p {
         text-align: justify;
-        font-size: 10px;
-        padding: 1em;
+        font-size: 1.2rem;
+        padding: 1rem;
+        width: 90%;
     }
 
     #nosotros>img{
@@ -335,12 +362,18 @@ footer{
     }
 
     .footer{
+        padding: 0 10px;
+        width: 100%;
         margin-top: 10px;
         overflow: hidden;
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
         align-items: center;
+        gap: 10px;
     }
+
+    
 
     #mapa{
         width: 250px;

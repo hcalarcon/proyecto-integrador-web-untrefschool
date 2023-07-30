@@ -75,10 +75,6 @@ footer div#direccion, #contacto{
     padding: 0 15px;
 }
 
-.navbar-toggler , #navbarSupportedContent{
-    margin-right: 5px;
-}
-
 i{
     
     color: black;
@@ -139,6 +135,28 @@ article{
     bottom: 0;
 }
 
+form{
+    text-align: center;
+    margin-top: 15px; 
+}
+
+input, textarea{
+    width: 97vw;
+    padding: 10px 0;
+    margin:5px 10px;
+    resize: none;
+    border: none;
+    border-bottom: solid 1px black;
+    border-radius: 2px;
+}
+
+#boton {
+    background: gray;
+    font-size: 12px;
+    color: white;
+    border: solid 1px black;
+}
+
 
 footer{
     margin-top: 10px;
@@ -179,6 +197,10 @@ footer{
         width: 100%;
         height: 50%;
         border-radius: 10px;
+    }
+
+    #carrusel__actividades{
+        display: none;
     }
 
     .container__lugares{
@@ -252,13 +274,12 @@ footer{
         display: none;
     }
 
-    #galeria {        
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        object-fit: cover;
+    #galerias { 
         display: none;
+    }
+
+    #contacto{
+       
     }
 
     .footer{
@@ -325,7 +346,7 @@ footer{
 
     #nosotros > p {
         text-align: justify;
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 1rem;
         width: 90%;
     }
@@ -337,6 +358,12 @@ footer{
         box-shadow: 0 0 10px 5px gray;
         border-radius: 10px;
     }
+
+    .actividades{
+        display: none;
+    }
+
+    
 
     .container__lugares{
         display: grid;
@@ -350,15 +377,39 @@ footer{
         display: none;
     }
 
-     #galeria {
+     #galerias {
         margin-top: 30px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 10px;
     }
 
-    .carrusel{
+    .carruseles{
         display: none;
+    }
+
+    #carrusel__actividades{
+        margin-top: 15px;
+    }
+    .carousel-item h5{
+        background: rgba(89, 83, 83, 0.768);
+        color: white;
+        font-size: 16px;
+        height: 30px;
+        text-align: start;
+        padding: 5px;
+    }
+
+    .carousel-item:nth-child(2n) img
+    {
+        object-position: 0 10%;
+    }
+    
+    .carousel-caption{
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
     }
 
     .footer{
@@ -416,7 +467,7 @@ footer{
         height: 90;   
      }
 
-    #galeria {
+    #galerias {
         margin-top: 30px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);

@@ -25,7 +25,7 @@
         </div>
         
     </header>
-    <nav class="navbar sticky-top navbar-expand-md " id="barranav">
+    <nav class="navbar sticky-top navbar-expand-sm " id="barranav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="img/mountain.png" id="imglogo" alt="montaña con nube y nieve en la cima" width="40px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
             <li class="nav-item"><a href="#lugares" class="nav-link">Lugares</a></li>
             <li class="nav-item"><a href="#actividades" class="nav-link">Actividades</a></li>
             <li class="nav-item"><a href="#galeria" class="nav-link">Galeria</a></li>
-            <li class="nav-item"><a href="contacto.html" target="_blank" class="nav-link">Contacto</a></li>
+            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -103,6 +103,52 @@
       </section>
 
       <h2>Actividades</h2>
+      <a  id="actividades"></a>
+      <section id="carrusel__actividades" class="carrusel">
+        <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/actividad1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                  <h5>TREKKING</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/actividad2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                  <h5>SNOWBOARD & SKI</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/actividad3.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                  <h5>KAYAK</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/actividad4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                  <h5>KITESUFT</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+      </section>
+
       <section class="actividades">
         <articles class="actividad">
           <img id="img1" src="img/actividad1.png" alt="personas haciendo trekin con un sol de fondo">
@@ -123,8 +169,8 @@
       </section>
       
       <h2>Galeria de imagenes</h2>
-
-      <section id="galeria">
+      <a href="" id="galeria"></a>
+      <section id="galerias">
           <article><img src="img/lolog.jpg" alt="" class="imaggaleria"></article>
           <article><img src="img/villarino.jpg" alt="" class="imaggaleria"></article>
           <article><img src="img/machonico.jpg" alt="" class="imaggaleria"></article>
@@ -139,7 +185,7 @@
           <article><img src="img/fondoformulario.jpg" alt="" class="imggaleria"></article>    
       </section>
 
-      <section class="carrusel">
+      <section class="carruseles">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -189,6 +235,27 @@
               <span class="visually-hidden">Siguiente</span>
             </button>
           </div>
+      </section>
+
+      <section id="contato">
+        <h2>Contactate con nosotros</h2>
+        <form action="">
+          <div>
+              <input type="text" name="nombre" id="nombre" placeholder="Hernaldo Cristian Alarcón" required>
+          </div>
+         <div>
+              <input type="email" name="correo" id="correo" placeholder="hernaldo.alar@gmail.com" required>
+         </div>
+         <div>
+              <input type="tel" name="telefono" id="telefono" placeholder="3644277105" required>
+         </div>
+         <div>
+              <textarea name="comentarios" id="comentarios" cols="55" rows="10" placeholder="escribe aqui tu consulta" ></textarea>
+         </div>
+         <div>
+              <input id="boton" type="submit">
+         </div>
+      </form>
       </section>
   </main>
 

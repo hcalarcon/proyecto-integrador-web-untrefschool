@@ -21,7 +21,7 @@ img {
 
 body{
     background-image: radial-gradient(circle at 20.18% 7.41%, #ebefd0 0, #e7f0d1 6.25%, #e3f1d3 12.5%, #def2d6 18.75%, #daf3d9 25%, #d6f4dc 31.25%, #d2f4e0 37.5%, #cff5e3 43.75%, #ccf5e7 50%, #c9f5eb 56.25%, #c7f5ef 62.5%, #c6f5f3 68.75%, #c5f5f6 75%, #c5f5fa 81.25%, #c5f4fd 87.5%, #c6f4ff 93.75%, #c8f3ff 100%);
-    
+    width: 100vw;
 }
 
 nav{
@@ -278,8 +278,8 @@ footer{
         display: none;
     }
 
-    #contacto{
-       
+    #img_logo{
+        display: none;
     }
 
     .footer{
